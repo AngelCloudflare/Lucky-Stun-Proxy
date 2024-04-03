@@ -19,8 +19,10 @@ location / {
    - 请求头：`Content-Type: application/x-www-form-urlencoded`
    - 请求主体：
 
-```json{
+```
+json{
     "service_id": "ql.nark.cf",
     "ip": "#{ipAddr}"
-}
+    }
 ```
+lucky仓库：[https://github.com/gdy666/lucky](https://github.com/gdy666/lucky "访问lucky仓库")
