@@ -10,17 +10,17 @@ location / {
     try_files $uri$uri/ /index.php$is_args$args;
 }
 ```
+
 使用方法：
+1. 正常解析域名到源站。
+2. Lucky面板开启webhook，参数如下：
+   - webhook地址：域名/receive_webhook.php
+   - 请求方式：POST
+   - 请求头：`Content-Type: application/x-www-form-urlencoded`
+   - 请求主体：
 
-1、正常解析域名到源站。
-
-2、Lucky面板开启webhook，参数如下：
-
-webhook地址：域名/receive_webhook.php
-请求方式：POST
-请求头：Content-Type: application/x-www-form-urlencoded
-请求主体：
 ```json{
     "service_id": "ql.nark.cf",
     "ip": "#{ipAddr}"
-}```
+}
+```
