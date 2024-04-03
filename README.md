@@ -18,11 +18,12 @@ location / {
    - 请求方式：POST
    - 请求头：`Content-Type: application/x-www-form-urlencoded`
    - 请求主体：
-     ```
-      {
+
+        ```
+        {
     "service_id": "ql.nark.cf",
     "ip": "#{ipAddr}"
-      }
-      ```
+}
+```
 
 lucky仓库：[https://github.com/gdy666/lucky](https://github.com/gdy666/lucky "访问lucky仓库")
