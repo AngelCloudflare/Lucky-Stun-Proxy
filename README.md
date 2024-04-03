@@ -9,7 +9,7 @@ Nginx需要加上以下代码，来避免访问反代路径被Nginx当成目录�
 location / {
     try_files $uri$uri/ /index.php$is_args$args;
 }
-
+```
 使用方法：
 
 1、正常解析域名到源站。
@@ -20,7 +20,7 @@ webhook地址：域名/receive_webhook.php
 请求方式：POST
 请求头：Content-Type: application/x-www-form-urlencoded
 请求主体：
-{
+```json{
     "service_id": "ql.nark.cf",
     "ip": "#{ipAddr}"
-}
+}```
