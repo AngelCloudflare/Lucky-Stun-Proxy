@@ -22,7 +22,7 @@ location / {
         请求主体：
      ```
         {
-           "service_id": "ql.nark.cf",
+           "service_id": "xxx.com",
             "ip": "#{ipAddr}"
           }
      ```
