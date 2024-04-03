@@ -27,5 +27,5 @@ location / {
           }
      ```
        响应码：200或OK
-     
+ 3.手动触发一次，成功就可以保存了。
 lucky仓库：[https://github.com/gdy666/lucky](https://github.com/gdy666/lucky "访问lucky仓库")
